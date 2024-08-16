@@ -1,4 +1,8 @@
 pub fn find_matches(content: &str, pattern: &str, mut writer: impl std::io::Write) {
+    if pattern.is_empty() {
+        eprintln!("Pattern must not be empty");
+        return;
+    }
     for line in content.lines() {
         if line.contains(pattern) {
             match writeln!(writer, "{}", line) {
