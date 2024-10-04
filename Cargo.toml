@@ -2,6 +2,13 @@
 name = "grrs"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "A tool to search files"
+readme = "README.md"
+homepage = "https://github.com/patrickovm/grrs"
+repository = "https://github.com/patrickovm/grrs"
+keywords = ["cli", "search", "demo"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.86"
